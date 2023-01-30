@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/menu_facebook"
+      tools:ignore="MissingConstraints" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/profil_image"
+        app:layout_constraintTop_toBottomOf="@id/menu_facebook"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/qwer"
+        tools:ignore="MissingClass,MissingConstraints" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/menu_facebook"
+        app:layout_constraintStart_toEndOf="@id/profil_image"
+        android:layout_marginStart="5dp"
+        android:text="Unvleast"
+        android:textSize="20sp"
+        android:id="@+id/nameaccont"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/timeshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameaccont"
+        app:layout_constraintStart_toEndOf="@id/profil_image"
+        android:layout_marginStart="5dp"
+        android:text="20hrs"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profil_image"
+        android:text="descrabtion post     "
+        android:id="@+id/descrabtion"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/descrabtion"
+        android:layout_height="200dp"
+        android:background="#03A9F4"
+        android:id="@+id/postshared"
+        tools:ignore="MissingConstraints"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/postshared"
+        android:src="@drawable/ic_like_post"
+        android:background="@color/white"
+        android:id="@+id/likeee"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/countlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/likeee"
+        app:layout_constraintBottom_toBottomOf="@id/likeee"
+        app:layout_constraintStart_toEndOf="@id/likeee"
+        android:layout_marginStart="10dp"
+        android:text="20"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/likeee"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        tools:ignore="MissingConstraints" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Like"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_like_post"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="comment"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_commint_icon"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="share"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_share_post"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/postshared"
+        app:layout_constraintStart_toEndOf="@id/likeee"
+        android:layout_marginStart="300dp"
+        android:text="15 share"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
